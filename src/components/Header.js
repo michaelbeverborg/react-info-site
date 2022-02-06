@@ -1,8 +1,10 @@
+import reactLogo from "./logo192.png";
+
 const Header = () => {
   return (
     <header>
       <nav>
-        <img src={require("./logo192.png")} />
+        <img src={reactLogo} />
         <ul className="nav-items">
           <li>Pricing</li>
           <li>About</li>
