@@ -1,8 +1,13 @@
 const Page = () => {
   return (
     <div>
-      <img src={require("./logo192.png")} alt="" />
-      <h4>Fun facts about React</h4>
+      <header>
+        <nav>
+          <img src={require("./logo192.png")} width="40px" />
+        </nav>
+      </header>
+
+      <h1>Fun facts about React</h1>
       <ul>
         <li>Was first released in 2013</li>
         <li>Was originally created by Jordan Walker</li>
@@ -10,6 +15,7 @@ const Page = () => {
         <li>Is maintained by Facebook</li>
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ul>
+      <footer>© Serros</footer>
     </div>
   );
 };
