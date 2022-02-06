@@ -1,6 +1,12 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  color: #fff;
-  background-color: black;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  height: 100vh;
+  background-color: #282d35;
 }
 
 header {
@@ -15,27 +21,56 @@ header {
 .nav-items > li {
   border-radius: 8px;
   padding: 10px;
+  color: #deebf8;
+  font-weight: 600;
 }
+
 .nav-items > li:hover {
-  background-color: #7e7e7e;
+  background-color: #61dafb;
 }
 
 nav {
   display: flex;
   align-items: center;
+  background-color: #21222a;
+  height: 90px;
+  padding: 30px 25px;
+}
+
+nav > h3 {
+  margin: 0;
+  color: #61dafb;
+  font-weight: 700;
+  font-size: 22px;
 }
 
 img {
-  margin-left: 20px;
-  width: 60px;
+  height: 30px;
+  margin-right: 7px;
 }
 
 main {
-  background-color: #2c2c2c;
-  padding-bottom: 20px;
+  padding: 57px 27px;
+  color: white;
 }
 
-footer {
-  padding: 20px;
-  background-color: #2c2c2c;
+main > h1 {
+  margin: 0;
+  font-size: 39px;
+  letter-spacing: -0.05em;
+}
+
+main > ul {
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+ul > li {
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+ul > li::marker {
+  font-size: 1.4rem;
+  color: #61dafb;
 }
