@@ -1,12 +1,19 @@
+import React from "react";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
 import "./App.css";
-import Page from "./components/Page";
 
-function App() {
+export default function App() {
+  const [darkMode, setDarkMode] = React.useState(true);
+
+  function toggleDarkMode() {
+    setDarkMode(prevMode => !prevMode);
+  }
+
   return (
-    <div className="App">
-      <Page />
+    <div className="container">
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <MainContent darkMode={darkMode} />
     </div>
   );
 }
-
-export default App;
